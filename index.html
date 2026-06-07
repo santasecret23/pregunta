@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Te Puedo hacer una preguntita?</title>
+    <style>
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0; 
+            background: linear-gradient(135deg, #FF6F61, #D13ABF);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+        .container { 
+            background: rgba(0, 0, 0, 0.7); 
+            padding: 30px; 
+            border-radius: 15px; 
+        }
+        h1 { 
+            font-size: 2.5em; 
+            margin-bottom: 20px; 
+        }
+        .buttons { 
+            margin-top: 20px; 
+        }
+        button { 
+            font-size: 20px; 
+            padding: 15px 30px; 
+            margin: 10px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background 0.3s; 
+        }
+        button:focus { 
+            outline: none; 
+        }
+        .yes-btn { 
+            background: #28a745; 
+            color: white; 
+        }
+        .yes-btn:hover { 
+            background: #218838; 
+        }
+        .no-btn { 
+            background: #dc3545; 
+            color: white; 
+        }
+        .no-btn:hover { 
+            background: #c82333; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¿Te Puedo hacer una preguntita?</h1>
+        <div class="buttons">
+            <button class="yes-btn" onclick="sayYes()">¡Sí!</button>
+            <button class="no-btn" onclick="sayNo()">No, gracias</button>
+        </div>
+    </div>
+    <script>
+        function sayYes() {
+            window.location.href = 'si.html';
+        }
+
+        function sayNo() {
+            window.location.href = 'no1.html';
+        }
+    </script>
+</body>
+</html>
